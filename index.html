@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="calculator" aria-label="Calculator">
+  <div class="display" aria-live="polite">
+    <div class="history" id="history"></div>
+    <div class="current" id="current">0</div>
+  </div>
+
+  <div class="keys">
+    <button class="clear" data-action="clear">AC</button>
+    <button class="op" data-action="delete" aria-label="Delete">⌫</button>
+    <button class="op" data-op="%" aria-label="Percent">%</button>
+    <button class="op" data-op="/" aria-label="Divide">÷</button>
+
+    <button data-num="7">7</button>
+    <button data-num="8">8</button>
+    <button data-num="9">9</button>
+    <button class="op" data-op="*" aria-label="Multiply">×</button>
+
+    <button data-num="4">4</button>
+    <button data-num="5">5</button>
+    <button data-num="6">6</button>
+    <button class="op" data-op="-" aria-label="Subtract">−</button>
+
+    <button data-num="1">1</button>
+    <button data-num="2">2</button>
+    <button data-num="3">3</button>
+    <button class="op" data-op="+" aria-label="Add">+</button>
+
+    <button class="wide" data-num="0">0</button>
+    <button data-num=".">.</button>
+    <button class="equals" data-action="equals">=</button>
+  </div>
+  <p class="hint">Keyboard: 0–9 · + − * / · Enter · Backspace · Esc</p>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
